@@ -24,8 +24,6 @@ $ docker_artisan migrate:refresh --seed // to create user
 ```
 
 - Documentation
-```
-<a href="http://doc.converter.mitrevski.work">http://doc.converter.mitrevski.work</a>
 
-```
+<a href="http://doc.converter.mitrevski.work">http://doc.converter.mitrevski.work</a>
 
