@@ -2,7 +2,7 @@
 
 ##Demo
 Check the demo version on this link bellow: <br>
-<a href="http://bank.webless.tk/">Demo link</a>
+<a href="http://convertor.mitrevski.work/">Demo link</a>
 
 **Dependency** <br>
 - Docker
