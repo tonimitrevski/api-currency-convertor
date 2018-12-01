@@ -4,6 +4,9 @@
 Check the demo version on this link bellow: <br>
 <a href="http://convertor.mitrevski.work/">Demo link</a>
 
+**Third Party Api** <br>
+https://exchangeratesapi.io/
+
 **Dependency** <br>
 - Docker
 
@@ -25,5 +28,5 @@ $ docker_artisan migrate:refresh --seed // to create user
 
 - Documentation
 
-<a href="http://doc.converter.mitrevski.work">http://doc.converter.mitrevski.work</a>
+<a href="http://doc.convertor.mitrevski.work">http://doc.converter.mitrevski.work</a>
 
