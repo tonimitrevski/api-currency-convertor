@@ -1,0 +1,61 @@
+version: '3'
+
+services:
+  composer:
+    restart: "no"
+    image: composer:latest
+    command: "install --ignore-platform-reqs --no-scripts"
+    volumes:
+      - .:/app
+    networks:
+      - api
+
+  nginx:
+    build: ./docker/nginx/
+    ports:
+      - "8080:80"
+      - "8085:8085"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - api
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      - "MYSQL_DATABASE=homestead"
+      - "MYSQL_USER=homestead"
+      - "MYSQL_PASSWORD=secret"
+      - "MYSQL_ROOT_PASSWORD=secret"
+    volumes:
+      - dbdata:/var/lib/mysql
+    ports:
+      - "23306:3306"
+    networks:
+      - api
+
+  php:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8088:22"
+    environment:
+      - "PLANR_ENV=local"
+      - "PHP_IDE_CONFIG=serverName=api"
+      - "XDEBUG_CONFIG=remote_host=docker.for.ubuntu.localhost"
+    networks:
+      - api
+  redis:
+    image: redis:alpine
+    networks:
+      - api
+
+volumes:
+  dbdata:
+
+networks:
+  api:
+    driver: bridge
