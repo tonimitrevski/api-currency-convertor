@@ -28,7 +28,7 @@ docker_phpunit
 
 - Documentation
 
-<a href="http://doc.convertor.mitrevski.work">http://doc.converter.mitrevski.work</a>
+<a target="_blank" href="http://doc.convertor.mitrevski.work/">http://doc.convertor.mitrevski.work/</a>
 
 ## Technologies
 - Docker
