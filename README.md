@@ -1,6 +1,11 @@
 # API for convert currency
 
+**API routes documentation** <br>
+
+<a target="_blank" href="http://doc.convertor.mitrevski.work/">http://doc.convertor.mitrevski.work/</a>
+
 **Third Party Api** <br>
+
 https://exchangeratesapi.io/
 
 **Dependency** <br>
@@ -25,10 +30,6 @@ docker_phpunit
 	"password": "toni1234",
 }
 ```
-
-- Documentation
-
-<a target="_blank" href="http://doc.convertor.mitrevski.work/">http://doc.convertor.mitrevski.work/</a>
 
 ## Technologies
 - Docker
