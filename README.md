@@ -14,6 +14,10 @@ $ docker_build // building docker images and if you ahve problems with the premi
 $ docker_up // run docker images
 $ docker_artisan migrate:refresh --seed // to create user
 ```
+- Run tests 
+```
+docker_phpunit
+```
 - test user credentials
 ```
 {
@@ -26,3 +30,14 @@ $ docker_artisan migrate:refresh --seed // to create user
 
 <a href="http://doc.convertor.mitrevski.work">http://doc.converter.mitrevski.work</a>
 
+## Technologies
+- Docker
+- Laravel, MySql, Redis, JWT auth etc.
+- Database migration schema
+- Creating models (User)
+- SOLID principles
+- Business Logic folder(DDD)
+<img src="https://bosnadev.com/wp-content/uploads/2015/03/repository_pattern.png" alt="">  <br> 
+- Tests (Mocking)
+- Database Factory pattern seeders (UsersSeeder)
+- Third party API 
